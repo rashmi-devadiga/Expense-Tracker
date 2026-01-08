@@ -90,6 +90,12 @@ expense-tracker/
 
 ## Screenshots
 
+<p align="center">
+  <img src="screenshots/transaction.png" width="30%">
+  <img src="screenshots/add-expense.png" width="30%">
+  <img src="screenshots/empty.png" width="30%">
+</p>
+
 ---
 
 ## How to Run the Project
