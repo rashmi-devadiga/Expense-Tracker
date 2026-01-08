@@ -17,7 +17,7 @@ A modern, responsive **Expense Tracker** web application that helps users track 
 4. [Project Structure](#project-structure)
 5. [How It Works](#how-it-works)
 6. [Screenshots](#screenshots)
-7. [How to Run the Project](#how-to-run-the-project)
+7. [How to Run](#how-to-run)
 8. [Future Enhancements](#future-enhancements)
 9. [Author](#author)
 
@@ -98,7 +98,7 @@ expense-tracker/
 
 ---
 
-## How to Run the Project
+## How to Run
 
 ### 1. Clone the Repository
 ```bash
