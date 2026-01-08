@@ -1,4 +1,4 @@
-# Expense Tracker Web Application Using JavaScript
+# Expense Tracker Web Application
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
@@ -13,7 +13,7 @@ A modern, responsive **Expense Tracker** web application that helps users track 
 
 1. [Overview](#overview)
 2. [Features](#features)
-3. [Tech Stack](#tech-stack)
+3. [Built With](#built-with)
 4. [Project Structure](#project-structure)
 5. [How It Works](#how-it-works)
 6. [Screenshots](#screenshots)
@@ -39,7 +39,7 @@ The project is designed with a **user-friendly interface**, making expense manag
 ## Features
 
 - Add expenses with title, amount, category & description  
-- Month-wise navigation (previous months only)  
+- Month-wise navigation  
 - Spending summary & category-wise breakdown  
 - Filter transactions (date, amount, category, alphabetical)    
 - Download monthly expense report (CSV)  
@@ -47,7 +47,7 @@ The project is designed with a **user-friendly interface**, making expense manag
 
 ---
 
-## Tech Stack
+## Built With
 
 - **Frontend:** HTML5, CSS3, JavaScript (ES Modules)
 - **Backend / Database:** Firebase Firestore
@@ -79,7 +79,7 @@ expense-tracker/
 
 ## How It Works
 
-1. The user selects a month using navigation arrows  
+1. User selects a month using navigation arrows  
 2. Expenses are fetched from Firestore based on the selected month and year  
 3. Summary cards update dynamically based on the data  
 4. Transactions are displayed with date, time, and category  
@@ -111,8 +111,8 @@ cd Expense-Tracker
 3. Create a Web App and copy the Firebase configuration
 4. Paste the configuration into firebase.js
 ### 3. Run the App
-  Open index.html in your browser
-  *(Or use Live Server in VS Code)*
+Open index.html in your browser
+*(Or use Live Server in VS Code)*
 
 ---
 
@@ -126,5 +126,7 @@ cd Expense-Tracker
 ---
 
 ## Author
-**Rashmi Devadiga**
-Bachelor of Computer Applications Graduate
+**Rashmi Devadiga**  
+Bachelor of Computer Applications Graduate  
+[LinkedIn](https://linkedin.com/in/rashmidevadiga) | [GitHub](https://github.com/rashmi-devadiga)
+
