@@ -1,11 +1,16 @@
 # Expense-Tracker 
 
+![Java](https://img.shields.io/badge/Java-17-red)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3-brightgreen)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
-![Firebase](https://img.shields.io/badge/Firebase-Console%20%26%20Firestore-ffca28)
+![REST API](https://img.shields.io/badge/REST-API-lightgrey)
+![Maven](https://img.shields.io/badge/Maven-Build-orange)
 
-A modern, responsive **Expense Tracker** web application that helps users track monthly expenses, analyze spending by category, and download reports. The app supports **month-wise transactions**, **Firebase Firestore** storage, and a clean, professional UI.
+A full-stack Expense Tracker Web Application that helps users track monthly expenses, analyze spending by category, and download reports. 
+Built using Spring Boot (Java) for the backend, MySQL for data storage, and HTML, CSS, and Vanilla JavaScript for the frontend.
 
 ---
 
@@ -39,7 +44,7 @@ The project is designed with a **user-friendly interface**, making expense manag
 ## Features
 
 - Add expenses with title, amount, category & description  
-- Month-wise navigation  
+- Month-wise navigation (Previous)
 - Spending summary & category-wise breakdown  
 - Filter transactions (date, amount, category, alphabetical)    
 - Download monthly expense report (CSV)  
@@ -49,29 +54,42 @@ The project is designed with a **user-friendly interface**, making expense manag
 
 ## Built With
 
-- **Frontend:** HTML5, CSS3, JavaScript (ES Modules)
-- **Backend / Database:** Firebase Firestore
-- **Tools:** VS Code, Firebase Console, GitHub
+-**Frontend:** HTML5, CSS3, JavaScript (ES Modules)
+-**Backend:** Java 17, Spring Boot, Spring Data JPA
+-**Database:** MySQL
+**Tools:** IntelliJ IDEA, MySQL Workbench, GitHub
 
 ---
 
 ## Project Structure
 ```md
-expense-tracker/
+expense-track/
 │
-├── index.html 
-├── style.css 
-├── firebase.js 
+├── src/main/java/com/example/expensetrack
+│   ├── controller
+│   │   └── ExpenseController.java
+│   ├── entity
+│   │   └── Expense.java
+│   ├── repository
+│   │   └── ExpenseRepository.java
+│   └── ExpenseTrackApplication.java
 │
-├── js/
-│ ├── main.js 
-│ ├── state.js 
-│ ├── ui.js 
-│ ├── modal.js 
-│ ├── expenses.js 
-│ ├── filter.js 
-│ └── month.js 
+├── src/main/resources
+│   ├── static
+│   │   ├── css
+│   │   │   └── style.css
+│   │   └── js
+│   │       ├── main.js
+│   │       ├── state.js
+│   │       ├── ui.js
+│   │       ├── modal.js
+│   │       ├── expenses.js
+│   │       ├── filter.js
+│   │       └── month.js
+│   └── templates
+│       └── index.html
 │
+├── pom.xml
 └── README.md
 ```
 
@@ -80,11 +98,12 @@ expense-tracker/
 ## How It Works
 
 1. User selects a month using navigation arrows  
-2. Expenses are fetched from Firestore based on the selected month and year  
-3. Summary cards update dynamically based on the data  
-4. Transactions are displayed with date, time, and category  
-5. If no transactions exist, an empty-state message is shown  
-6. Users can download the monthly expense report as a CSV file  
+2. Frontend sends API requests to Spring Boot backend
+3. Expenses are fetched from MySQL based on selected month and year
+4. Summary cards update dynamically based on the data  
+5. Transactions are displayed with date, time, category, & description  
+6. If no transactions exist, an empty-state message is shown  
+7. Users can filter, delete, or download the monthly expense report as a CSV file  
 
 ---
 
@@ -102,8 +121,8 @@ expense-tracker/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/rashmi-devadiga/Expense-Tracker.git
-cd Expense-Tracker
+git clone https://github.com/your-username/expense-tracker.git
+cd expense-tracker
 ```
 ### 2. Firebase Setup
 1. Go to Firebase Console & Create a new project
